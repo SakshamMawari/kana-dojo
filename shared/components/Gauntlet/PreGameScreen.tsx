@@ -156,7 +156,7 @@ export default function PreGameScreen({
                           onClick={() => handleDifficultyClick(key)}
                           colorScheme={isSelected ? 'main' : undefined}
                           borderColorScheme={isSelected ? 'main' : undefined}
-                          borderBottomThickness={isSelected ? 6 : 0}
+                          borderBottomThickness={isSelected ? 8 : 0}
                           borderRadius='2xl'
                           className={clsx(
                             'flex-1 gap-1.5 px-4 py-2.5 text-sm',
@@ -170,7 +170,7 @@ export default function PreGameScreen({
                       );
                     })}
                   </div>
-                  <p className='text-center text-xs text-[var(--muted-color)]'>
+                  <p className='text-center text-xs text-[var(--secondary-color)]'>
                     {DIFFICULTY_CONFIG[difficulty].description}
                   </p>
                 </div>
@@ -348,7 +348,7 @@ export default function PreGameScreen({
                 'flex h-12 w-1/2 flex-row items-center justify-center gap-2 px-2 sm:px-6',
                 'bg-[var(--secondary-color)] text-[var(--background-color)]',
                 'rounded-2xl transition-colors duration-200',
-                'border-b-6 border-[var(--secondary-color-accent)] shadow-sm',
+                'border-b-8 border-[var(--secondary-color-accent)] ',
                 'hover:cursor-pointer'
               )}
             >
@@ -363,7 +363,7 @@ export default function PreGameScreen({
                 className={clsx(
                   'flex h-12 w-full flex-row items-center justify-center gap-2 px-2 sm:px-6',
                   'rounded-2xl transition-colors duration-200',
-                  'border-b-6 font-medium shadow-sm',
+                  'border-b-8 font-medium ',
                   'hover:cursor-pointer',
                   'border-[var(--main-color-accent)] bg-[var(--main-color)] text-[var(--background-color)]'
                 )}
