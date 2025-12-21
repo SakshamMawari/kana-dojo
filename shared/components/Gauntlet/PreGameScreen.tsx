@@ -64,7 +64,6 @@ export default function PreGameScreen({
   const { playClick } = useClick();
   const router = useRouter();
   const pathname = usePathname();
-  const [showAdvanced, setShowAdvanced] = useState(false);
 
   // Check if we're on the gauntlet route
   const isGauntletRoute = pathname?.includes('/gauntlet') ?? false;
@@ -270,48 +269,32 @@ export default function PreGameScreen({
             })}
           </div>
 
-          {/* Advanced Settings */}
-          <div className='space-y-3'>
-            <button
-              onClick={() => {
-                playClick();
-                setShowAdvanced(!showAdvanced);
-              }}
-              className='w-full text-center text-sm text-[var(--muted-color)] underline hover:text-[var(--secondary-color)]'
-            >
-              {showAdvanced ? 'Hide' : 'Show'} Advanced Settings
-            </button>
-
-            {showAdvanced && (
-              <div className='space-y-3 rounded-lg bg-[var(--card-color)] p-4'>
-                <p className='text-sm font-medium text-[var(--secondary-color)]'>
-                  Repetitions per character:
-                </p>
-                <div className='flex flex-wrap justify-center gap-2'>
-                  {REPETITION_OPTIONS.map(rep => (
-                    <ActionButton
-                      key={rep}
-                      onClick={() => {
-                        playClick();
-                        setRepetitions(rep);
-                      }}
-                      colorScheme={repetitions === rep ? 'main' : 'secondary'}
-                      borderColorScheme={
-                        repetitions === rep ? 'main' : 'secondary'
-                      }
-                      borderBottomThickness={6}
-                      borderRadius='2xl'
-                      className={clsx(
-                        'w-auto px-4 py-2',
-                        repetitions !== rep && 'opacity-60'
-                      )}
-                    >
-                      {rep}×
-                    </ActionButton>
-                  ))}
-                </div>
-              </div>
-            )}
+          {/* Repetitions per character */}
+          <div className='space-y-3 rounded-lg bg-[var(--card-color)] p-4'>
+            <p className='text-sm font-medium text-[var(--secondary-color)]'>
+              Repetitions per character:
+            </p>
+            <div className='flex flex-wrap justify-center gap-2'>
+              {REPETITION_OPTIONS.map(rep => (
+                <ActionButton
+                  key={rep}
+                  onClick={() => {
+                    playClick();
+                    setRepetitions(rep);
+                  }}
+                  colorScheme={repetitions === rep ? 'main' : 'secondary'}
+                  borderColorScheme={repetitions === rep ? 'main' : 'secondary'}
+                  borderBottomThickness={6}
+                  borderRadius='2xl'
+                  className={clsx(
+                    'w-auto px-4 py-2',
+                    repetitions !== rep && 'opacity-60'
+                  )}
+                >
+                  {rep}×
+                </ActionButton>
+              ))}
+            </div>
           </div>
 
           {/* Action Buttons */}

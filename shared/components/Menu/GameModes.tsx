@@ -451,8 +451,8 @@ const GameModes = ({
                     borderColorScheme={
                       challengeDuration === duration ? 'main' : 'secondary'
                     }
-                    borderBottomThickness={6}
-                    borderRadius='2xl'
+                    borderBottomThickness={8}
+                    borderRadius='3xl'
                     className={clsx(
                       'w-auto px-4 py-2',
                       challengeDuration !== duration && 'opacity-60'
@@ -472,7 +472,7 @@ const GameModes = ({
                 'flex h-12 w-1/2 flex-row items-center justify-center gap-2 px-2 sm:px-6',
                 'bg-[var(--secondary-color)] text-[var(--background-color)]',
                 'rounded-2xl transition-colors duration-200',
-                'border-b-6 border-[var(--secondary-color-accent)] shadow-sm',
+                'border-b-8 border-[var(--secondary-color-accent)] ',
                 'hover:cursor-pointer'
               )}
               onClick={() => {
@@ -510,7 +510,7 @@ const GameModes = ({
                 className={clsx(
                   'flex h-12 w-full flex-row items-center justify-center gap-2 px-2 sm:px-6',
                   'rounded-2xl transition-colors duration-200',
-                  'border-b-6 font-medium shadow-sm',
+                  'border-b-8 font-medium ',
                   'hover:cursor-pointer',
                   selectedGameMode
                     ? 'border-[var(--main-color-accent)] bg-[var(--main-color)] text-[var(--background-color)]'

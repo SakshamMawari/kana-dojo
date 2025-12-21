@@ -345,7 +345,7 @@ function DurationSelector({
   return (
     <div className='space-y-3 rounded-lg bg-[var(--card-color)] p-4'>
       <p className='text-sm font-medium text-[var(--secondary-color)]'>
-        Duration: 
+        Duration:
       </p>
       <div className='flex flex-wrap justify-center gap-2'>
         {DURATION_OPTIONS.map(duration => (
