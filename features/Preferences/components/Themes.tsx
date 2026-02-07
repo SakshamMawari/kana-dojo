@@ -233,7 +233,7 @@ const Themes = () => {
                   borderColor: currentTheme.borderColor,
                   outline:
                     currentTheme.id === selectedTheme
-                      ? `3px solid ${currentTheme.mainColor}`
+                      ? `3px solid ${currentTheme.secondaryColor}`
                       : 'none',
                   transition: 'background-color 275ms',
                 }}

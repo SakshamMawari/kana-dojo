@@ -104,7 +104,7 @@ const ThemeCard = memo(function ThemeCard({
       style={{
         ...(wallpaper ? wallpaperStyles : { background }),
         border: borderStyle,
-        outline: isSelected ? `3px solid ${theme.mainColor}` : 'none',
+        outline: isSelected ? `3px solid ${theme.secondaryColor}` : 'none',
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
