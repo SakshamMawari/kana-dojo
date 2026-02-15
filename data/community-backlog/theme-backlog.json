@@ -215,7 +215,9 @@
     "mainColor": "oklch(78.0% 0.130 55.0 / 1)",
     "secondaryColor": "oklch(68.0% 0.095 30.0 / 1)",
     "issued": true,
-    "completed": false
+    "completed": true,
+    "completedBy": "Haruto-works333",
+    "completedPR": 4973
   },
   {
     "id": "anime-pop",
