@@ -166,7 +166,7 @@
     "english": "Are you ready?",
     "game": "Final Fantasy X",
     "character": "Tidus",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
