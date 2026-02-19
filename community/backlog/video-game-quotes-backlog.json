@@ -186,7 +186,7 @@
     "english": "Now, let's begin.",
     "game": "Final Fantasy X",
     "character": "Tidus",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
