@@ -42,6 +42,36 @@
     "description": "Lernen Sie japanische Kanji-Zeichen organisiert nach JLPT-Levels. Üben Sie mit interaktiven Übungen, verfolgen Sie Ihren Fortschritt und meistern Sie Tausende von Kanji.",
     "keywords": "kanji, kanji lernen, japanische kanji, JLPT kanji, kanji übung, kanji nach level"
   },
+  "kanjiJlptN5": {
+    "title": "JLPT N5 Kanji - Liste und Übung | KanaDojo",
+    "titleShort": "JLPT N5 Kanji",
+    "description": "Üben Sie JLPT N5 Kanji mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
+    "keywords": "jlpt n5 kanji, n5 kanji, n5 kanji liste, n5 kanji übung, kanji lernen n5"
+  },
+  "kanjiJlptN4": {
+    "title": "JLPT N4 Kanji - Liste und Übung | KanaDojo",
+    "titleShort": "JLPT N4 Kanji",
+    "description": "Üben Sie JLPT N4 Kanji mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
+    "keywords": "jlpt n4 kanji, n4 kanji, n4 kanji liste, n4 kanji übung, kanji lernen n4"
+  },
+  "kanjiJlptN3": {
+    "title": "JLPT N3 Kanji - Liste und Übung | KanaDojo",
+    "titleShort": "JLPT N3 Kanji",
+    "description": "Üben Sie JLPT N3 Kanji mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
+    "keywords": "jlpt n3 kanji, n3 kanji, n3 kanji liste, n3 kanji übung, kanji lernen n3"
+  },
+  "kanjiJlptN2": {
+    "title": "JLPT N2 Kanji - Liste und Übung | KanaDojo",
+    "titleShort": "JLPT N2 Kanji",
+    "description": "Üben Sie JLPT N2 Kanji mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
+    "keywords": "jlpt n2 kanji, n2 kanji, n2 kanji liste, n2 kanji übung, kanji lernen n2"
+  },
+  "kanjiJlptN1": {
+    "title": "JLPT N1 Kanji - Liste und Übung | KanaDojo",
+    "titleShort": "JLPT N1 Kanji",
+    "description": "Üben Sie JLPT N1 Kanji mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
+    "keywords": "jlpt n1 kanji, n1 kanji, n1 kanji liste, n1 kanji übung, kanji lernen n1"
+  },
   "kanjiBlitz": {
     "title": "Kanji Blitz - Testen Sie Ihre Kanji-Erkennungsgeschwindigkeit",
     "titleShort": "Kanji Blitz",

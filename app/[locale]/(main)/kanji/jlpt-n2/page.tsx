@@ -7,12 +7,10 @@ import { FAQSchema, kanjiFAQs } from '@/shared/components/SEO/FAQSchema';
 import { LearningResourceSchema } from '@/shared/components/SEO/LearningResourceSchema';
 import { routing } from '@/core/i18n/routing';
 
-// Generate static pages for all locales at build time
 export function generateStaticParams() {
   return routing.locales.map(locale => ({ locale }));
 }
 
-// ISR: Revalidate every hour
 export const revalidate = 3600;
 
 export async function generateMetadata({
@@ -21,10 +19,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  return await generatePageMetadata('kanji', { locale, pathname: '/kanji' });
+  return await generatePageMetadata('kanjiJlptN2', {
+    locale,
+    pathname: '/kanji/jlpt-n2',
+  });
 }
 
-export default async function KanjiPage({
+export default async function KanjiJlptN2Page({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -37,35 +38,36 @@ export default async function KanjiPage({
         items={[
           { name: 'Home', url: `https://kanadojo.com/${locale}` },
           { name: 'Kanji', url: `https://kanadojo.com/${locale}/kanji` },
+          { name: 'JLPT N2', url: `https://kanadojo.com/${locale}/kanji/jlpt-n2` },
         ]}
       />
       <CourseSchema
-        name='Japanese Kanji Learning Course by JLPT Level (N5-N1)'
-        description='Learn Japanese Kanji characters organized by JLPT levels from N5 to N1. Master over 2,000 essential kanji with readings, meanings, and context through interactive training and spaced repetition.'
-        url={`https://kanadojo.com/${locale}/kanji`}
-        educationalLevel='Beginner to Advanced'
-        skillLevel='All Levels'
-        learningResourceType='Interactive Course, Exercise and Games'
+        name='JLPT N2 Kanji Course - Japanese Kanji Practice'
+        description='Study JLPT N2 kanji with interactive drills and set-based practice. Improve kanji recognition, readings, and meanings with immediate feedback and progress tracking.'
+        url={`https://kanadojo.com/${locale}/kanji/jlpt-n2`}
+        educationalLevel='Upper Intermediate'
+        skillLevel='JLPT N2'
+        learningResourceType='Interactive Course'
       />
       <LearningResourceSchema
-        name='Interactive Kanji Practice and JLPT Quiz'
-        description='Master over 2,000 Japanese Kanji characters by JLPT levels N5 through N1. Practice readings, meanings, and recognition with interactive quizzes and adaptive repetition.'
-        url={`https://kanadojo.com/${locale}/kanji`}
+        name='JLPT N2 Kanji Practice'
+        description='Targeted JLPT N2 kanji practice with selectable levels, quick selection tools, and kanji set dictionaries for exam-focused study.'
+        url={`https://kanadojo.com/${locale}/kanji/jlpt-n2`}
         learningResourceType='Quiz, Interactive, Game'
-        educationalLevel={['Beginner', 'Intermediate', 'Advanced']}
-        teaches='Japanese Kanji Characters, Readings, and Meanings'
-        assesses='Kanji recognition, onyomi and kunyomi recall, and meaning comprehension'
-        timeRequired='PT1H'
+        educationalLevel={['Upper Intermediate']}
+        teaches='JLPT N2 kanji readings, meanings, and recognition'
+        assesses='JLPT N2 kanji recall speed and accuracy'
+        timeRequired='PT35M'
         isAccessibleForFree={true}
         provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
         educationalAlignment={{
           alignmentType: 'educationalLevel',
           educationalFramework: 'JLPT',
-          targetName: 'N5-N1',
+          targetName: 'N2',
         }}
       />
       <FAQSchema faqs={kanjiFAQs} />
-      <KanjiMenu />
+      <KanjiMenu fixedCollection='n2' hideUnitSelector />
     </>
   );
 }

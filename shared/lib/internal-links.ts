@@ -31,6 +31,31 @@ export const mainLinks = {
     text: 'Kanji',
     title: 'Learn Japanese Kanji by JLPT Level',
   },
+  kanjiN5: {
+    href: '/kanji/jlpt-n5',
+    text: 'JLPT N5 Kanji',
+    title: 'Practice JLPT N5 Kanji',
+  },
+  kanjiN4: {
+    href: '/kanji/jlpt-n4',
+    text: 'JLPT N4 Kanji',
+    title: 'Practice JLPT N4 Kanji',
+  },
+  kanjiN3: {
+    href: '/kanji/jlpt-n3',
+    text: 'JLPT N3 Kanji',
+    title: 'Practice JLPT N3 Kanji',
+  },
+  kanjiN2: {
+    href: '/kanji/jlpt-n2',
+    text: 'JLPT N2 Kanji',
+    title: 'Practice JLPT N2 Kanji',
+  },
+  kanjiN1: {
+    href: '/kanji/jlpt-n1',
+    text: 'JLPT N1 Kanji',
+    title: 'Practice JLPT N1 Kanji',
+  },
   vocabulary: {
     href: '/vocabulary',
     text: 'Vocabulary',
@@ -240,6 +265,9 @@ export function getRelatedLinks(currentPath: string): InternalLink[] {
     related.push(
       learningLinks.kanjiPractice,
       learningLinks.kanjiBlitz,
+      mainLinks.kanjiN5,
+      mainLinks.kanjiN4,
+      mainLinks.kanjiN3,
       jlptLinks.n5,
       jlptLinks.n4,
     );

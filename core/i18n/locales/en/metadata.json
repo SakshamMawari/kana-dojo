@@ -9,20 +9,20 @@
   "kana": {
     "title": "Kana Dojo - Learn Japanese Hiragana & Katakana by Level",
     "titleShort": "Kana Dojo - Learn Hiragana & Katakana",
-    "description": "Master Hiragana and Katakana with interactive games and exercises. Practice Japanese kana characters by difficulty level with instant feedback and progress tracking.",
-    "keywords": "hiragana chart 2025, katakana chart, japanese kana, learn hiragana fast, learn katakana online, kana practice app, japanese alphabet, hiragana and katakana, hiragana vs katakana, learn hiragana in one day, learn katakana quickly, japanese characters, kana flashcards, hiragana chart with pronunciation, katakana pronunciation guide, japanese syllabary, hiragana writing practice, katakana writing practice, complete hiragana chart, complete katakana chart, japanese phonetic alphabet, kana memorization, hiragana quiz, katakana quiz"
+    "description": "Master Hiragana and Katakana with interactive games, quizzes, and drills. Practice Japanese kana characters by level with instant feedback, progress tracking, and beginner-friendly study flows.",
+    "keywords": "learn kana, kana chart, japanese kana chart, hiragana and katakana, hiragana practice online, katakana practice online, japanese alphabet practice, kana quiz, kana flashcards, kana drills, kana recognition training, kana reading practice, hiragana chart with pronunciation, katakana chart with pronunciation, japanese syllabary practice, beginner japanese writing system"
   },
   "learnHiragana": {
     "title": "Learn Hiragana - Complete Hiragana Chart, Drills & Practice | KanaDojo",
     "titleShort": "Learn Hiragana",
-    "description": "Learn Hiragana fast with interactive drills, selectable kana cards, and guided practice. Master the full hiragana chart, dakuon, and yoon with instant feedback and progress tracking.",
-    "keywords": "learn hiragana, hiragana chart, hiragana practice, hiragana drills, hiragana quiz, hiragana flashcards, japanese hiragana, hiragana pronunciation, hiragana reading practice, hiragana characters, hiragana table, hiragana dakuon, hiragana yoon, hiragana lessons, japanese alphabet hiragana, learn hiragana fast, hiragana for beginners, hiragana study guide"
+    "description": "Learn Hiragana fast with interactive drills, selectable kana cards, and guided practice. Master the complete hiragana chart, dakuon, and yoon with instant feedback and retention-focused study.",
+    "keywords": "learn hiragana, hiragana chart, hiragana table, hiragana drills, hiragana practice, hiragana quiz, hiragana flashcards, japanese hiragana alphabet, hiragana pronunciation guide, hiragana reading practice, hiragana for beginners, hiragana dakuon, hiragana yoon, complete hiragana chart, memorize hiragana fast"
   },
   "learnKatakana": {
     "title": "Learn Katakana - Complete Katakana Chart, Drills & Practice | KanaDojo",
     "titleShort": "Learn Katakana",
-    "description": "Learn Katakana fast with interactive drills, selectable kana cards, and guided practice. Master the full katakana chart, dakuon, yoon, and foreign sounds with instant feedback.",
-    "keywords": "learn katakana, katakana chart, katakana practice, katakana drills, katakana quiz, katakana flashcards, japanese katakana, katakana pronunciation, katakana reading practice, katakana characters, katakana table, katakana dakuon, katakana yoon, katakana foreign sounds, katakana lessons, japanese alphabet katakana, learn katakana fast, katakana for beginners"
+    "description": "Learn Katakana fast with interactive drills, selectable kana cards, and guided practice. Master the complete katakana chart, dakuon, yoon, and foreign sounds with instant feedback.",
+    "keywords": "learn katakana, katakana chart, katakana table, katakana practice, katakana drills, katakana quiz, katakana flashcards, japanese katakana alphabet, katakana pronunciation guide, katakana reading practice, katakana for beginners, katakana dakuon, katakana yoon, katakana foreign sounds, complete katakana chart"
   },
   "kanaBlitz": {
     "title": "Kana Blitz - Test Your Hiragana & Katakana Speed",
@@ -39,8 +39,38 @@
   "kanji": {
     "title": "Kanji Dojo - Learn Japanese Kanji Characters by JLPT Level",
     "titleShort": "Kanji Dojo - Learn Japanese Kanji",
-    "description": "Learn Japanese Kanji characters organized by JLPT levels. Practice with interactive exercises, track your progress, and master thousands of kanji.",
-    "keywords": "kanji, learn kanji 2025, japanese kanji characters, JLPT kanji 2025, kanji practice online, kanji by level, JLPT N5 kanji, JLPT N4 kanji, JLPT N3 kanji, JLPT N2 kanji, JLPT N1 kanji, how to learn kanji, kanji meanings, kanji readings, onyomi kunyomi, kanji flashcards online, japanese characters kanji, kanji study app, kanji memorization techniques, kanji writing practice, learn kanji fast, easy kanji learning, jouyou kanji, common kanji, kanji dictionary online, kanji quiz, kanji recognition practice"
+    "description": "Learn Japanese kanji organized by JLPT levels N5 to N1. Practice readings and meanings with interactive exercises, quick set selection, and progress tracking.",
+    "keywords": "learn kanji, japanese kanji characters, kanji practice online, jlpt kanji, jlpt n5 kanji, jlpt n4 kanji, jlpt n3 kanji, jlpt n2 kanji, jlpt n1 kanji, kanji by level, kanji quiz, kanji flashcards, onyomi kunyomi, kanji meanings, kanji readings, kanji recognition practice, kanji study app"
+  },
+  "kanjiJlptN5": {
+    "title": "JLPT N5 Kanji List and Practice - Learn Beginner Kanji | KanaDojo",
+    "titleShort": "JLPT N5 Kanji Practice",
+    "description": "Study JLPT N5 kanji with interactive drills, level sets, and instant feedback. Build strong beginner kanji recognition and reading accuracy.",
+    "keywords": "jlpt n5 kanji, n5 kanji list, beginner kanji practice, learn n5 kanji, n5 kanji quiz, japanese n5 characters, n5 kanji readings, n5 kanji meanings, n5 kanji flashcards"
+  },
+  "kanjiJlptN4": {
+    "title": "JLPT N4 Kanji List and Practice - Learn Intermediate Kanji | KanaDojo",
+    "titleShort": "JLPT N4 Kanji Practice",
+    "description": "Practice JLPT N4 kanji with interactive level sets, quizzes, and tracking. Improve kanji recall speed, readings, and meaning recognition.",
+    "keywords": "jlpt n4 kanji, n4 kanji list, n4 kanji practice, learn n4 kanji, n4 kanji quiz, japanese n4 characters, n4 kanji readings, n4 kanji meanings, n4 kanji flashcards"
+  },
+  "kanjiJlptN3": {
+    "title": "JLPT N3 Kanji List and Practice - Learn Intermediate Kanji | KanaDojo",
+    "titleShort": "JLPT N3 Kanji Practice",
+    "description": "Train JLPT N3 kanji with focused set selection and interactive kanji quizzes. Strengthen recognition, readings, and exam readiness.",
+    "keywords": "jlpt n3 kanji, n3 kanji list, n3 kanji practice, learn n3 kanji, n3 kanji quiz, japanese n3 characters, n3 kanji readings, n3 kanji meanings, n3 kanji flashcards"
+  },
+  "kanjiJlptN2": {
+    "title": "JLPT N2 Kanji List and Practice - Advanced Kanji Study | KanaDojo",
+    "titleShort": "JLPT N2 Kanji Practice",
+    "description": "Study JLPT N2 kanji with advanced level sets and interactive practice. Improve high-level kanji reading accuracy and meaning recall for exam preparation.",
+    "keywords": "jlpt n2 kanji, n2 kanji list, n2 kanji practice, learn n2 kanji, n2 kanji quiz, japanese n2 characters, n2 kanji readings, n2 kanji meanings, n2 kanji flashcards"
+  },
+  "kanjiJlptN1": {
+    "title": "JLPT N1 Kanji List and Practice - Master Advanced Kanji | KanaDojo",
+    "titleShort": "JLPT N1 Kanji Practice",
+    "description": "Master JLPT N1 kanji with focused advanced drills and set-based practice. Train for top-level kanji recognition, readings, and meaning recall.",
+    "keywords": "jlpt n1 kanji, n1 kanji list, n1 kanji practice, learn n1 kanji, n1 kanji quiz, japanese n1 characters, n1 kanji readings, n1 kanji meanings, n1 kanji flashcards"
   },
   "kanjiBlitz": {
     "title": "Kanji Blitz - Test Your Kanji Recognition Speed",

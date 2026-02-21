@@ -24,6 +24,7 @@ type QuickSelectModalProps = {
   onClearAll: () => void;
   onSelectRandom: (count: number) => void;
   unitName: string;
+  unitLabel?: string;
 };
 
 interface SetCardProps {
@@ -91,6 +92,7 @@ const QuickSelectModal = ({
   onClearAll,
   onSelectRandom,
   unitName,
+  unitLabel,
 }: QuickSelectModalProps) => {
   const { playClick } = useClick();
   const [searchLevel, setSearchLevel] = useState('');
@@ -225,7 +227,7 @@ const QuickSelectModal = ({
         <div className='flex shrink-0 items-center justify-between border-b border-(--border-color) p-4 sm:p-6'>
           <div>
             <h2 className='text-xl font-bold text-(--main-color) sm:text-2xl'>
-              Quick Select - {unitName.toUpperCase()}
+              Quick Select - {unitLabel || unitName.toUpperCase()}
             </h2>
             <p className='mt-1 text-xs text-(--secondary-color) sm:text-sm'>
               {selectedSets.length} of {sets.length} levels selected

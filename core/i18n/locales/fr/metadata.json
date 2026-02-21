@@ -42,6 +42,36 @@
     "description": "Apprenez les caractères Kanji japonais organisés par niveaux JLPT. Pratiquez avec des exercices interactifs, suivez vos progrès et maîtrisez des milliers de kanji.",
     "keywords": "kanji, apprendre kanji, kanji japonais, kanji JLPT, pratique kanji, kanji par niveau"
   },
+  "kanjiJlptN5": {
+    "title": "JLPT N5 Kanji - Liste et Pratique | KanaDojo",
+    "titleShort": "JLPT N5 Kanji",
+    "description": "Pratiquez les kanji JLPT N5 avec des exercices interactifs, sélection rapide et suivi des progrès.",
+    "keywords": "jlpt n5 kanji, kanji n5, liste kanji n5, pratique kanji n5, apprendre kanji n5"
+  },
+  "kanjiJlptN4": {
+    "title": "JLPT N4 Kanji - Liste et Pratique | KanaDojo",
+    "titleShort": "JLPT N4 Kanji",
+    "description": "Pratiquez les kanji JLPT N4 avec des exercices interactifs, sélection rapide et suivi des progrès.",
+    "keywords": "jlpt n4 kanji, kanji n4, liste kanji n4, pratique kanji n4, apprendre kanji n4"
+  },
+  "kanjiJlptN3": {
+    "title": "JLPT N3 Kanji - Liste et Pratique | KanaDojo",
+    "titleShort": "JLPT N3 Kanji",
+    "description": "Pratiquez les kanji JLPT N3 avec des exercices interactifs, sélection rapide et suivi des progrès.",
+    "keywords": "jlpt n3 kanji, kanji n3, liste kanji n3, pratique kanji n3, apprendre kanji n3"
+  },
+  "kanjiJlptN2": {
+    "title": "JLPT N2 Kanji - Liste et Pratique | KanaDojo",
+    "titleShort": "JLPT N2 Kanji",
+    "description": "Pratiquez les kanji JLPT N2 avec des exercices interactifs, sélection rapide et suivi des progrès.",
+    "keywords": "jlpt n2 kanji, kanji n2, liste kanji n2, pratique kanji n2, apprendre kanji n2"
+  },
+  "kanjiJlptN1": {
+    "title": "JLPT N1 Kanji - Liste et Pratique | KanaDojo",
+    "titleShort": "JLPT N1 Kanji",
+    "description": "Pratiquez les kanji JLPT N1 avec des exercices interactifs, sélection rapide et suivi des progrès.",
+    "keywords": "jlpt n1 kanji, kanji n1, liste kanji n1, pratique kanji n1, apprendre kanji n1"
+  },
   "kanjiBlitz": {
     "title": "Kanji Blitz - Testez Votre Vitesse de Reconnaissance des Kanji",
     "titleShort": "Kanji Blitz",
