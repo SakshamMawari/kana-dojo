@@ -320,21 +320,21 @@ const Behavior = () => {
             'flex-1 overflow-hidden',
           )}
           style={{
-            outline: pronunciationAutoPlay
-              ? '3px solid var(--secondary-color)'
-              : 'none',
+            outline: 'none',
+            backgroundColor: pronunciationAutoPlay
+              ? 'var(--secondary-color)'
+              : 'var(--card-color)',
+            color: pronunciationAutoPlay
+              ? 'var(--background-color)'
+              : 'var(--secondary-color)',
+            transition: 'background-color 275ms, color 275ms',
           }}
           onClick={() => {
             playClick();
             setPronunciationAutoPlay(true);
           }}
         >
-          <span>
-            <span className='text-(--main-color)'>
-              {pronunciationAutoPlay && '\u2B24 '}
-            </span>
-            on
-          </span>
+          <span>on</span>
           <Volume2 size={20} className='mb-0.5' />
         </button>
         <button
@@ -347,21 +347,21 @@ const Behavior = () => {
             'flex-1 overflow-hidden',
           )}
           style={{
-            outline: !pronunciationAutoPlay
-              ? '3px solid var(--secondary-color)'
-              : 'none',
+            outline: 'none',
+            backgroundColor: !pronunciationAutoPlay
+              ? 'var(--secondary-color)'
+              : 'var(--card-color)',
+            color: !pronunciationAutoPlay
+              ? 'var(--background-color)'
+              : 'var(--secondary-color)',
+            transition: 'background-color 275ms, color 275ms',
           }}
           onClick={() => {
             playClick();
             setPronunciationAutoPlay(false);
           }}
         >
-          <span>
-            <span className='text-(--main-color)'>
-              {!pronunciationAutoPlay && '\u2B24 '}
-            </span>
-            off
-          </span>
+          <span>off</span>
           <VolumeX size={20} className='mb-0.5' />
         </button>
       </div>

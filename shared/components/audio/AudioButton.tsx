@@ -125,13 +125,13 @@ const AudioButton: React.FC<AudioButtonProps> = ({
   ]);
 
   const sizeClasses = {
-    sm: 'p-2 text-sm',
+    sm: 'p-1 text-xs',
     md: 'p-3 text-base',
     lg: 'p-4 text-lg',
   };
 
   const iconSizes = {
-    sm: 16,
+    sm: 14,
     md: 20,
     lg: 24,
   };
