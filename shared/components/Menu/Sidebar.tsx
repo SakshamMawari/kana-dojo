@@ -173,7 +173,9 @@ const NavLink = memo(
 
       // Padding adjustment for ActionButton style (compensate for border)
       const paddingClasses = USE_ACTION_BUTTON_STYLE
-        ? 'max-lg:pt-1 max-lg:pb-2.5 lg:pt-2 lg:pb-3'
+        ? isMain
+          ? 'max-lg:pt-1 max-lg:pb-2.5 lg:pt-2 lg:pb-3'
+          : 'max-lg:pt-1 max-lg:pb-2.5 lg:pt-1.5 lg:pb-2.5'
         : 'max-lg:py-2 lg:py-2';
 
       return (
@@ -564,17 +566,20 @@ const Sidebar = () => {
               onToggle={onToggle}
             />
             {/* Only show items if section is expanded or not collapsible */}
-            {(!section.collapsible || isExpanded) &&
-              section.items.map(item => (
-                <NavLink
-                  key={item.href}
-                  item={item}
-                  isActive={isActive(item.href)}
-                  onClick={playClick}
-                  variant='secondary'
-                  useSlidingIndicator={true}
-                />
-              ))}
+            {(!section.collapsible || isExpanded) && section.items.length > 0 && (
+              <div className='flex w-full flex-col gap-0 max-lg:hidden'>
+                {section.items.map(item => (
+                  <NavLink
+                    key={item.href}
+                    item={item}
+                    isActive={isActive(item.href)}
+                    onClick={playClick}
+                    variant='secondary'
+                    useSlidingIndicator={true}
+                  />
+                ))}
+              </div>
+            )}
           </div>
         );
       })}
