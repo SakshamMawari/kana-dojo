@@ -64,7 +64,7 @@ function EffectCard({
       className={clsx(
         'flex h-20 flex-col items-center justify-center gap-1',
         buttonBorderStyles,
-        'rounded-2xl',
+        'rounded-3xl',
         'border-1 border-(--card-color)',
         'cursor-pointer px-2 py-2.5',
       )}

@@ -10,7 +10,7 @@ import { useJapaneseTTS } from '@/shared/hooks/useJapaneseTTS';
 
 const Behavior = () => {
   const { playClick } = useClick();
-  const behaviorButtonStyles = clsx(buttonBorderStyles, 'rounded-2xl');
+  const behaviorButtonStyles = clsx(buttonBorderStyles, 'rounded-3xl');
 
   const displayKana = usePreferencesStore(state => state.displayKana);
   const setDisplayKana = usePreferencesStore(state => state.setDisplayKana);
