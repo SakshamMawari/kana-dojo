@@ -436,7 +436,7 @@
     "english": "I will become the god of the new world.",
     "anime": "Death Note",
     "character": "Light Yagami",
-    "completed": false,
+    "completed": true,
     "issued": true
   },
   {
@@ -957,7 +957,7 @@
     "anime": "Death Note",
     "character": "Light Yagami",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 97,
@@ -1036,7 +1036,7 @@
     "english": "Lend me your energy! (alt wording 52)",
     "anime": "Dragon Ball Z",
     "character": "Son Goku",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -1356,7 +1356,7 @@
     "english": "Ze ha ha ha! (alt wording 32) (alt wording 84)",
     "anime": "One Piece",
     "character": "Marshall D. Teach (Blackbeard)",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
