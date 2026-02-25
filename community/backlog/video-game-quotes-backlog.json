@@ -436,7 +436,7 @@
     "english": "I won't hesitate anymore.",
     "game": "Final Fantasy X",
     "character": "Auron",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -706,7 +706,7 @@
     "english": "I'll change fate.",
     "game": "Kingdom Hearts",
     "character": "Riku",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -956,7 +956,7 @@
     "english": "I make my own path.",
     "game": "Metal Gear Solid",
     "character": "Solid Snake",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
