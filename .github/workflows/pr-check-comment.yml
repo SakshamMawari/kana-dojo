@@ -24,7 +24,7 @@ jobs:
       - name: Post PR status comment
         uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.AUTOMATION_PR_TOKEN || secrets.GITHUB_TOKEN }}
           script: |
             const path = '.github/templates/messages.cjs';
             const workflowRun = context.payload.workflow_run;
