@@ -163,7 +163,7 @@ jobs:
             }
 
             if (pr.mergeable === false) {
-              console.log(`PR #${prNumber} is not mergeable`);
+              console.log(`PR #${prNumber} has merge conflicts or is not mergeable; leaving it open for manual intervention.`);
               return;
             }
 
@@ -181,16 +181,8 @@ jobs:
               } catch (e) {
                 console.log(`Merge attempt ${i} failed: ${e.message}`);
                 if (e.status === 409) {
-                  try {
-                    await github.rest.pulls.updateBranch({
-                      owner: context.repo.owner,
-                      repo: context.repo.repo,
-                      pull_number: prNumber
-                    });
-                    console.log(`Requested branch update for PR #${prNumber}`);
-                  } catch (updateErr) {
-                    console.log(`Could not update branch: ${updateErr.message}`);
-                  }
+                  console.log(`PR #${prNumber} has merge conflicts; leaving it open for manual intervention.`);
+                  return;
                 }
                 if (i < MAX_RETRIES) {
                   await sleep(5000);
