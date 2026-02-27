@@ -50,6 +50,33 @@ jobs:
               }
             }
 
+            async function resolvePrByHeadRef(headOwner, headBranch, expectedHeadSha) {
+              if (!headOwner || !headBranch) {
+                return null;
+              }
+              try {
+                const { data: pulls } = await github.rest.pulls.list({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  state: 'open',
+                  head: `${headOwner}:${headBranch}`,
+                  per_page: 20
+                });
+
+                const exactShaMatch = (pulls || []).find(function(pr) {
+                  return pr && pr.head && pr.head.sha === expectedHeadSha;
+                });
+                if (exactShaMatch) {
+                  return exactShaMatch;
+                }
+
+                return (pulls || [])[0] || null;
+              } catch (error) {
+                console.log(`Could not resolve PR from head ref ${headOwner}:${headBranch}: ${error.message}`);
+                return null;
+              }
+            }
+
             async function listAllPrFiles(prNumber) {
               return await github.paginate(github.rest.pulls.listFiles, {
                 owner: context.repo.owner,
@@ -69,7 +96,13 @@ jobs:
               if (prs.length > 0 && prs[0].number) {
                 prNumber = prs[0].number;
               } else {
-                const fallbackPr = await resolvePrByHeadSha(run.head_sha);
+                let fallbackPr = await resolvePrByHeadSha(run.head_sha);
+                if (!fallbackPr || !fallbackPr.number) {
+                  const headOwner = run.head_repository && run.head_repository.owner && run.head_repository.owner.login
+                    ? run.head_repository.owner.login
+                    : null;
+                  fallbackPr = await resolvePrByHeadRef(headOwner, run.head_branch, run.head_sha);
+                }
                 if (!fallbackPr || !fallbackPr.number) {
                   console.log(`No pull request associated with workflow_run ${run.id}; skipping.`);
                   return;
