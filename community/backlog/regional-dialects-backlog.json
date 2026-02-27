@@ -706,7 +706,7 @@
     "region": "Kyushu",
     "note": "Common Kyushu replacement. (Set 4)",
     "id": 71,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
