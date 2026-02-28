@@ -1096,7 +1096,7 @@
     "region": "Kyushu",
     "note": "Reason marker in Kyushu. (Set 6)",
     "id": 110,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
