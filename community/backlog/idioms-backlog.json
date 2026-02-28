@@ -924,7 +924,7 @@
     "meaning": "Slow to start doing something. (Set 6)",
     "id": 103,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "japanese": "顔が広い",
@@ -932,7 +932,7 @@
     "english": "Wide face",
     "meaning": "Have many connections. (Set 6)",
     "id": 104,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
